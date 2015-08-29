@@ -1,5 +1,5 @@
 function add() {
-  // TODO
+  var m=arguments,f=m.length,a=0;while(f--)a+=m[f];f=add.bind(a,a),f.valueOf=Number.bind(a,a);return f
 }
 
 function test(a, b) {
